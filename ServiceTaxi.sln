@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceTaxiBLL", "ServiceTa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceTaxiDAL", "ServiceTaxiDAL\ServiceTaxiDAL.csproj", "{720C5659-A982-4EC6-A8BA-FCCED88EDBC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceTaxiWebApi", "ServiceTaxiWebApi\ServiceTaxiWebApi.csproj", "{030BF410-E6EA-4231-91C3-1BAC771EB917}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{720C5659-A982-4EC6-A8BA-FCCED88EDBC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{720C5659-A982-4EC6-A8BA-FCCED88EDBC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{720C5659-A982-4EC6-A8BA-FCCED88EDBC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{030BF410-E6EA-4231-91C3-1BAC771EB917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{030BF410-E6EA-4231-91C3-1BAC771EB917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{030BF410-E6EA-4231-91C3-1BAC771EB917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{030BF410-E6EA-4231-91C3-1BAC771EB917}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

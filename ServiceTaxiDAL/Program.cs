@@ -9,26 +9,29 @@ using ServiceTaxi.Models;
 
 namespace ServiceTaxiDAL
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
 
-            User u1 = new User { Country = "Ukrain", FirstName = "Oleksa", ID = 454, LastName = "dfsc", PhoneNumber = "45" };
+            User u1 = new User { Country = "Ukrain", FirstName = "Baza", ID = 454, LastName = "dfsc", PhoneNumber = "45" };
             
             using (var br = new DataBaseContext()) {
 
-                br.Users.Add(u1);
-                br.SaveChanges();
+                //br.Users.Add(u1);
+                //br.SaveChanges();
+             
 
 
-                var q = br.Users.Find(0);
-                System.Console.WriteLine(q);
+
+                foreach (var a in br.Users.ToList()) {
+                    Console.WriteLine(a.ToString());
+                }
             }
 
 
-            
 
+            Console.ReadKey();
 
     }
 }
