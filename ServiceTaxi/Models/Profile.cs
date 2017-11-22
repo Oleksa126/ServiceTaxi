@@ -13,6 +13,7 @@ namespace ServiceTaxi.Models
         public string LastName { get; set; }
         public string PhoneNumber { get; set; }
         public Gender Gender { get; set; }
+        public List<Feedback> Feedback { get; set; }
     }
 }
 

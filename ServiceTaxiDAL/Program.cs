@@ -14,7 +14,7 @@ namespace ServiceTaxiDAL
         static void Main(string[] args)
         {
 
-            User u1 = new User { Country = "Ukrain", FirstName = "Baza", ID = 454, LastName = "dfsc", PhoneNumber = "45" };
+            User u1 = new User { Country = "Ukrain", FirstName = "Baza", ID = 454, LastName = "dfsc", PhoneNumber = "45"};
             
             using (var br = new DataBaseContext()) {
 

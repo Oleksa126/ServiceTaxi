@@ -19,6 +19,12 @@ namespace ServiceTaxiDAL.Repository
             _db = db;
         }
 
+        public bool AddFeedback(Feedback feedback)
+        {
+            //_db.Users.(feedback);
+            return true;
+        }
+
         public bool CreateUser(User user)
         {
             _db.Users.Add(user);

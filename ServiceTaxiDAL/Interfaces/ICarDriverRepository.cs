@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace ServiceTaxiDAL.Interfaces
 {
-    public interface IUserRepository
+    public interface ICarDriverRepository
     {
-        bool CreateUser(User user);
-        User GetUser(int id);
-        bool UpdateUser(User user);
+        bool CreateCarDriver(CarDrive carDrive);
+        CarDrive GetCarDriver(int id);
+        bool UpdateCarDriver(CarDrive carDrive);
         bool AddFeedback(Feedback feedback);
+
     }
 }

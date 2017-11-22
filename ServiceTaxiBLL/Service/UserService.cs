@@ -16,6 +16,12 @@ namespace ServiceTaxi.ServiceTaxiBLL.Service
             _userRepository = userRepository;
         }
 
+        public bool AddFeedback(Feedback feedback)
+        {
+            var result = _userRepository.AddFeedback(feedback);
+            return true;
+        }
+
         public bool CreateUser(User user)
         {
             var result = _userRepository.CreateUser(user);

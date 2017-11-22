@@ -12,5 +12,7 @@ namespace ServiceTaxiBLL.Interfaces
         bool CreateUser(User user);
         User GetUser(int id);
         bool UpdateUser(User user);
+        bool AddFeedback(Feedback feedback);
+
     }
 }
