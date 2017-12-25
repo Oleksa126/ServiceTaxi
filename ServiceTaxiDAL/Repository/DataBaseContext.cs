@@ -13,7 +13,7 @@ namespace ServiceTaxi.Repository
         public DataBaseContext() : base("DbConnection") { }
 
         public DbSet<User> Users { get; set; }
-
+        public DbSet<Feedback> Feedback { get; set; }
     }
 
 }

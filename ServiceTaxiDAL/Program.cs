@@ -13,13 +13,13 @@ namespace ServiceTaxiDAL
     {
         static void Main(string[] args)
         {
-
-            User u1 = new User { Country = "Ukrain", FirstName = "Baza", ID = 454, LastName = "dfsc", PhoneNumber = "45"};
+            var fed = new List<Feedback> { new Feedback { feedback = "heee", ID = 5 } };
+            User u1 = new User { Country = "Ukrain", FirstName = "Baza", ID = 454, LastName = "dfsc", PhoneNumber = "45", Feedback = fed};
             
             using (var br = new DataBaseContext()) {
 
-                //br.Users.Add(u1);
-                //br.SaveChanges();
+                br.Users.Add(u1);
+                br.SaveChanges();
              
 
 

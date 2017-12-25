@@ -1,19 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ServiceTaxi.Models
 {
     public class Feedback
     {
-        int id;
-        String feedback;
+       public int ID { get;  set; }
+       public String feedback { get; set; }
 
 
-        public Feedback(String _feedback) {
-            feedback = _feedback;
+        public override string ToString()
+        {
+            return feedback;
         }
     }
 }
