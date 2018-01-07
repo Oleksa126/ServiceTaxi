@@ -9,7 +9,7 @@ namespace ServiceTaxiDAL.Interfaces
 {
     public interface IUserRepository
     {
-        bool CreateUser(User user);
+        bool AddUser(User user);
         User GetUser(int id);
         bool UpdateUser(User user);
         bool AddFeedback(Feedback feedback);

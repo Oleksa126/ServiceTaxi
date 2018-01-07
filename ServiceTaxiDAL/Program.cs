@@ -1,38 +1,36 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.Entity;
 using ServiceTaxi.Repository;
 using ServiceTaxi.Models;
+using System.Data.SqlClient;
+using ServiceTaxiDAL.Repository;
 
 namespace ServiceTaxiDAL
 {
     public class Program
     {
+        public static string ConnectionString = "Server=OLEKSA; Database=DBServiceTaxi; Integrated Security=True;";
         static void Main(string[] args)
         {
-            var fed = new List<Feedback> { new Feedback { feedback = "heee", ID = 5 } };
-            User u1 = new User { Country = "Ukrain", FirstName = "Baza", ID = 454, LastName = "dfsc", PhoneNumber = "45", Feedback = fed};
-            
-            using (var br = new DataBaseContext()) {
 
-                br.Users.Add(u1);
-                br.SaveChanges();
-             
+            CarRepository repository = new CarRepository();
+            //repository.AddCar("BMW","X5",4589,"Тлумач", ServiceTaxi.States.ClassOfCars.Middle);
 
+            //var user = repository.GetAllCarByWorkCity("Тлумач");
 
+            //for (int i = 0; i < user.Count; i++)
+            //{
+            //    System.Console.WriteLine(user[i].ToString());
+            //}
 
-                foreach (var a in br.Users.ToList()) {
-                    Console.WriteLine(a.ToString());
-                }
-            }
+            //repository.DeleteCarByID(3);
 
-
+            repository.UpdateCarByID(1,"BMW", "X5", 4589, "Тлумач", ServiceTaxi.States.ClassOfCars.Middle);
 
             Console.ReadKey();
 
+        }
     }
-}
 }

@@ -64,7 +64,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\ICarDriverRepository.cs" />
     <Compile Include="Interfaces\ICarRepository.cs" />
     <Compile Include="Interfaces\IUserRepository.cs" />
     <Compile Include="Program.cs" />
@@ -77,11 +76,6 @@
     <Compile Include="Repository\CarRepository.cs" />
     <Compile Include="Repository\DataBaseContext.cs" />
     <Compile Include="Repository\UserRepository.cs" />
-    <Compile Include="Service_TaxiDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Service_TaxiDataSet.xsd</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -90,32 +84,12 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Service_TaxiDataSet.xsc">
-      <DependentUpon>Service_TaxiDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Service_TaxiDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Service_TaxiDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service_TaxiDataSet.xss">
-      <DependentUpon>Service_TaxiDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ServiceTaxi\ServieTaxi.csproj">
       <Project>{138d4b57-b943-4b70-acf7-403276e05568}</Project>
       <Name>ServieTaxi</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Service_Taxi.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Service_Taxi_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Service_Taxi.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
